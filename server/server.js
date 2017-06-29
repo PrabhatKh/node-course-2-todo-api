@@ -1,3 +1,6 @@
+require('./config/config.js');
+
+
 const {ObjectId} = require('mongodb');
 const _ = require('lodash');
 
@@ -9,7 +12,7 @@ var {Todo} = require ('./models/todo');
 var {user} = require ('./models/user');
 
 var app=express();
-const port = process.env.PORT || 3000; //HeroKU
+const port = process.env.PORT; //HeroKU
 
 app.use(bodyParser.json());
 
